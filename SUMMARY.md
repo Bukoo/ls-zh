@@ -1,10 +1,8 @@
 # 目录
 
-
+* [文档简介](about_this_book.md)
 
 * [概述](overview.md)
-
-
 
 * [安装](installation.md)
 * [使用方法](usage.md)
@@ -12,8 +10,6 @@
 * [编辑器/IDE插件](text_editor-IDE_plugins.md)
 * [标准库](standard_library.md)
 * [Source Map](source_maps.md)
-
-
 
 * [简介](introduction.md)
 * [变量语法](literals.md)
@@ -27,8 +23,6 @@
 * [属性访问](property_access.md)
 * [异常](exceptions.md)
 * [面向对象编程](OOP.md)
-
-
 
 * [从CoffeeScript迁移到LiveScript](converting_from_coffeescript.md)
 * [更新日志](changelog.md)
