@@ -1,7 +1,3 @@
----
-typora-copy-images-to: ipic
----
-
 # 概述
 
 **LiveScript**是一种**JavaScript**的**预编译语言**。它能直观地被编译为JavaScript，并帮助开发者略过重复冗余的代码格式，专注于书写拥有更高可读性的代码。LiveScript增添了许多特性去支持函数式编程，同时为便于开发者做面向对象与命令式编程开发做了大量改进。
@@ -12,7 +8,7 @@ LiveScript本是[Coco](http://satyr.github.io/coco/)的一个分支，同时是C
 
 相关精选博客：[**LiveScript 1.4.0 - Source Maps and more!**](http://livescript.net/blog/livescript-1.4.0-source-maps-more.html)
 
-###### 一些例子
+##### 一些例子
 
 （省略某些代码示例）
 

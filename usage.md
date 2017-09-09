@@ -4,7 +4,7 @@
 
 **bash**: `lsc [options]... [file]...`
 
-###### 常见用法：
+##### 常见用法：
 
 ```bash
 Usage: lsc [option]... [file]...
@@ -53,6 +53,7 @@ Version 1.5.0
 
 
 
+
 ## JSON
 
 如果想将LiveScript格式的JSON代码编译为`.json`文件，可以使用`.json.ls`文件后缀，或者编译时添加参数`-j,--json`。
@@ -71,6 +72,8 @@ $ lsc -de '@files |> map (.to-upper-case!)' package.json
 
 
 
+
+
 可以通过`-d,--prelude`参数引入[prelude.ls](http://www.preludels.com/)。
 
 ```shell
@@ -82,6 +85,8 @@ $ lsc -de '@files |> map (.to-upper-case!)' package.json
   "LICENSE"
 ]
 ```
+
+
 
 
 
@@ -115,9 +120,7 @@ lsc -r 'path' -de '@files |> map -> [it, path.resolve it]' package.json
 
 在Node或Browserify项目中引入：`var LiveScript = require('livescript');`或`require! livescript`，又或者通过前几章提到的浏览器内安装步骤。在Node环境下，通过`require`引入的同时会在在`require.extensions`中注册。
 
-
-
-###### 常见用法：
+##### 常见用法：
 
 `LiveScript.compile(code :: String, options :: Object?) -> String`
 
@@ -134,6 +137,8 @@ lsc -r 'path' -de '@files |> map -> [it, path.resolve it]' package.json
 
 
 
+
+
 `LiveScript.run(code :: String, options :: Object?) -> String`
 
 执行一段LiveScript代码的字符串。如果编译失败会抛出一个语法错误。需要注意的是，这个功能使用了`Function`构造函数。
@@ -147,11 +152,13 @@ lsc -r 'path' -de '@files |> map -> [it, path.resolve it]' package.json
 
 
 
-######  更多使用方法：
+##### 更多使用方法：
 
 `LiveScript.ast(code :: String|Array) -> Object`
 
 如果是字符串类型，会生成LiveScript源代码的抽象语法树（AST）；如果是数组类型，会生成记号流（token stream）。若该字符串不能被解析成为LiveScript代码，会抛出语法错误；若是一个数组，当该流（stream）不合法，会抛出一个错误。
+
+
 
 
 
@@ -166,7 +173,11 @@ lsc -r 'path' -de '@files |> map -> [it, path.resolve it]' package.json
 
 
 
+
+
 `LiveScript.lex(code :: String)`等同于`LiveScript.tokens(code, {raw: true})`。
+
+
 
 
 
@@ -176,7 +187,7 @@ lsc -r 'path' -de '@files |> map -> [it, path.resolve it]' package.json
 
 
 
-###### 浏览器环境独有的方法：
+##### 浏览器环境独有的方法：
 
 `LiveScript.stab(code :: String, callback :: (err :: Error?) -> void, filename :: String?) -> void`
 
@@ -184,9 +195,13 @@ lsc -r 'path' -de '@files |> map -> [it, path.resolve it]' package.json
 
 
 
+
+
 `LiveScript.load(url :: String, callback :: (err :: Error?) -> void) -> void`
 
 根据`url`通过`XMLHttpRequest`加载一个远程LiveScript文件，并附带一个可选错误类型的回调函数。
+
+
 
 
 
