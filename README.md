@@ -1,3 +1,3 @@
-# My Awesome Book
+# LiveScript中文文档
 
-This file file serves as your book's preface, a great place to describe your book's content and ideas.
+个人翻译的LiveScript文档，加深自己对JS理解的同时希望能帮助有需要查看LiveScript中文文档的人：）
