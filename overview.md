@@ -15,13 +15,13 @@ LiveScript本是[Coco](http://satyr.github.io/coco/)的一个分支，同时是C
 非嵌套的回调函数书写方式与无需`()`的链式调用：
 
 ```livescript
-# LiveScript
+# livescript
 <- $ 'h1' .on 'click'
 alert 'boom!'
 ```
 
 ```javascript
-// JavaScript
+// javascript
 $('h1').on('click', function(){
   return alert('boom!');
 });
